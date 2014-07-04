@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Private Chat Service</title>
+	<link rel="stylesheet" href="./content/Default.css" type="text/css"/>
+	<script src="./script/jquery-1.11.1.min.js"></script>
+	<script src="./script/socket.io.js"></script>
+	<script src="./script/sqlToClientScript.js"></script>
+</head>
+<body>
+	<div class="userContainer">
+		<input type="button" id="signIn" value="sign in" />
+		<p> Sign Up: get token <a href="https://trello.com/1/authorize?key=618872adfeb66934035ef3c85a7f9744&name=My+Application&expiration=30days&response_type=token">here</a> then click enter below. After entering your token you should be able to sign in</p>
+		<input type="button" id="enterToken" value="enter token" />
+		<h2>OPTIONS</h2>
+		<div id="options"></div>
+	</div>
+	<div class="conversationContainer">
+		<!-- <input type="text" id="data" />
+		<input type="button" id="dataSend" value="send" /> -->
+
+		<div class="conversation" id="conversation"></div>
+	</div>
+</body>
+</html>
